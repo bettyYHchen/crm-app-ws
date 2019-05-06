@@ -1,0 +1,20 @@
+<h4>Welcome to Manager Panel</h4>
+<table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>E-mail</th>
+            <th>Positions</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.positions}}</td>
+              </tr>
+        </tbody>
+      </table>
+    {{errorMessage}}
